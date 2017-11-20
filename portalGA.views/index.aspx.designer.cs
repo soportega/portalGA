@@ -7,9 +7,9 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace portalGA.views.Login {
+namespace portalGA.views {
     
     
-    public partial class login {
+    public partial class index {
     }
 }

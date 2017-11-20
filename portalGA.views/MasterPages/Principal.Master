@@ -11,7 +11,8 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <h1>Hola</h1>
+        <h1>MasterPage</h1>
+        <a href="../Login/login.aspx">Login</a>
     <div>
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         
