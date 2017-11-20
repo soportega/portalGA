@@ -8,16 +8,195 @@
     <title>Grupo Acuña</title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+
+    <link href="../Css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../Css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="../Css/animate.min.css" rel="stylesheet"/> 
+    <link href="../Css/lightbox.css" rel="stylesheet"/> 
+	<link href="../Css/main.css" rel="stylesheet"/>
+	<link href="../Css/responsive.css" rel="stylesheet"/>
+
+    <!--[if lt IE 9]>
+	    <script src="js/html5shiv.js"></script>
+	    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="../Img/ico/favicon.ico"/>
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../Img/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../Img/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../Img/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="../Img/ico/apple-touch-icon-57-precomposed.png"/>
+
 </head>
 <body>
     <form id="form1" runat="server">
-        <h1>MasterPage</h1>
-        <a href="../Login/login.aspx">Login</a>
+          <header id="header">      
+       <!-- <div class="container">
+            <div class="row">
+                <div class="col-sm-12 overflow">
+                   <div class="social-icons pull-right">
+                        <ul class="nav nav-pills">
+                            <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                            <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href=""><i class="fa fa-dribbble"></i></a></li>
+                            <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div> 
+                </div>
+             </div>
+        </div> -->
+        <div class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="../index.aspx">
+                    	<h1><img style="width:70%; height:70%" src="../Img/grupo_acuna_logo-min.png" alt="logo" href="../index.aspx" /></h1>
+                    </a>
+                    
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="../index.aspx" >INICIO</a></li>
+                        <li class="dropdown"><a href="#">Santa Ana <i class="fa fa-angle-down"></i></a>
+                            <ul role="menu" class="sub-menu">
+                                <li><a href="http://www.cosemu.com/"  target="_blank">COSEMU</a></li>
+                                <li><a href="http://www.senndecr.com/"  target="_blank">SENN</a></li>
+                            </ul>
+                        </li> 
+                        <li class="dropdown"><a href="#">SAN PEDRO <i class="fa fa-angle-down"></i></a>
+                            <ul role="menu" class="sub-menu">
+                                <li><a href="#">CAAJ</a></li>
+                                <li><a href="http://www.cobrodesa.com/" target="_blank">COBRODESA</a></li>
+                            </ul>
+                        </li>                        
+                       <!-- <li class="dropdown"><a href="blog.html">Blog <i class="fa fa-angle-down"></i></a>
+                            <ul role="menu" class="sub-menu">
+                                <li><a href="blog.html">Blog Default</a></li>
+                                <li><a href="blogtwo.html">Timeline Blog</a></li>
+                                <li><a href="blogone.html">2 Columns + Right Sidebar</a></li>
+                                <li><a href="blogthree.html">1 Column + Left Sidebar</a></li>
+                                <li><a href="blogfour.html">Blog Masonary</a></li>
+                                <li><a href="blogdetails.html">Blog Details</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="portfolio.html">Portfolio <i class="fa fa-angle-down"></i></a>
+                            <ul role="menu" class="sub-menu">
+                                <li><a href="portfolio.html">Portfolio Default</a></li>
+                                <li><a href="portfoliofour.html">Isotope 3 Columns + Right Sidebar</a></li>
+                                <li><a href="portfolioone.html">3 Columns + Right Sidebar</a></li>
+                                <li><a href="portfoliotwo.html">3 Columns + Left Sidebar</a></li>
+                                <li><a href="portfoliothree.html">2 Columns</a></li>
+                                <li><a href="portfolio-details.html">Portfolio Details</a></li>
+                            </ul>
+                        </li>     --->   
+                                        
+                        <li><a href="../Login/login.aspx">Login</a></li>             
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--/#header-->
+
     <div>
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-        
+      
+
         </asp:ContentPlaceHolder>
     </div>
+
+        
+    <footer id="footer" style="background-image: url('../Img/home/footer.png');">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center bottom-separator">
+                    <img src="../Img/home/under.png" class="img-responsive inline" alt=""/>
+                </div>
+                <div class="contact-info bottom" style="text-align:center">
+                        <h2>Contactos</h2>
+                    </div>
+                <div class="container">
+            <div class="row">
+                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
+                    <div class="single-service">
+                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="300ms">
+                            <img src="../Img/home/ticketSys-min.png" alt=""/>
+                        </div>
+                         <h2>Laura Acuña</h2>
+                        <address>
+                        E-mail: <a href="mailto:someone@example.com">email@email.com</a> <br/> 
+                        Phone: +1 (123) 456 7890 <br/> 
+                        Fax: +1 (123) 456 7891 <br/> 
+                        </address>
+                    </div>
+                </div>
+                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
+                    <div class="single-service">
+                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="600ms">
+                            <img src="../Img/home/phone.png" alt=""/>
+                        </div>
+                         <h2>Johanna Acuña</h2>
+                        <address>
+                        E-mail: <a href="mailto:someone@example.com">email@email.com</a> <br/> 
+                        Phone: +1 (123) 456 7890 <br/> 
+                        Fax: +1 (123) 456 7891 <br/> 
+                        </address>
+                    </div>
+                </div>
+                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="900ms">
+                    <div class="single-service">
+                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="900ms">
+                            <img src="../Img/home/ticketSys-min.png" alt=""/>
+                        </div>
+                        <h2>Rebeca Corales</h2>
+                        <address>
+                        E-mail: <a href="mailto:someone@example.com">email@email.com</a> <br/> 
+                        Phone: +1 (123) 456 7890 <br/> 
+                        Fax: +1 (123) 456 7891 <br/> 
+                        </address>
+                    </div>
+                </div>
+            </div>
+        </div>
+                
+                <div class="">
+                    <div class="contact-info bottom" style="text-align:center">
+                        <h2>Contactos</h2>
+                        <address>
+                        E-mail: <a href="mailto:someone@example.com">email@email.com</a> <br/> 
+                        Phone: +1 (123) 456 7890 <br/> 
+                        Fax: +1 (123) 456 7891 <br/> 
+                        </address>
+
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    
+                </div>
+                <div class="col-sm-12">
+                    <div class="copyright-text text-center">
+                        <p>&copy; GRUPO ACUÑA 2017. All Rights Reserved.</p>
+                        <p>Crafted by <a target="_blank" href="#">Alejandro Chacón Fonseca</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--/#footer-->
     </form>
+
+    </form>
+
+    <script type="text/javascript" src="../Js/jquery.js"></script>
+    <script type="text/javascript" src="../Js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../Js/lightbox.min.js"></script>
+    <script type="text/javascript" src="../Js/wow.min.js"></script>
+    <script type="text/javascript" src="../Js/main.js"></script> 
 </body>
 </html>

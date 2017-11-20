@@ -94,13 +94,91 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Css\animate.min.css" />
+    <Content Include="Css\bootstrap.min.css" />
+    <Content Include="Css\font-awesome.min.css" />
+    <Content Include="Css\lightbox.css" />
+    <Content Include="Css\main.css" />
+    <Content Include="Css\prettyPhoto.css" />
+    <Content Include="Css\responsive.css" />
+    <Content Include="Fonts\fontawesome-webfont.svg" />
+    <Content Include="Fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Img\404-bg.png" />
+    <Content Include="Img\404.png" />
+    <Content Include="Img\coming-soon-bg.png" />
+    <Content Include="Img\coming-soon1.png" />
+    <Content Include="Img\coming-soon2.png" />
+    <Content Include="Img\coming-soon3.png" />
+    <Content Include="Img\coming-soon4.png" />
+    <Content Include="Img\contact-bg.png" />
+    <Content Include="Img\grupo_acuna_logo-min.png" />
+    <Content Include="Img\home\activeicon.png" />
+    <Content Include="Img\home\client1.png" />
+    <Content Include="Img\home\client2.png" />
+    <Content Include="Img\home\client3.png" />
+    <Content Include="Img\home\client4.png" />
+    <Content Include="Img\home\client5.png" />
+    <Content Include="Img\home\client6.png" />
+    <Content Include="Img\home\clients.png" />
+    <Content Include="Img\home\cycle.png" />
+    <Content Include="Img\home\footer.png" />
+    <Content Include="Img\home\icon1.png" />
+    <Content Include="Img\home\icon2.png" />
+    <Content Include="Img\home\icon3.png" />
+    <Content Include="Img\home\image1.png" />
+    <Content Include="Img\home\image2.png" />
+    <Content Include="Img\home\image3.png" />
+    <Content Include="Img\home\phone.png" />
+    <Content Include="Img\home\profile1.png" />
+    <Content Include="Img\home\profile2.png" />
+    <Content Include="Img\home\slider-bg.png" />
+    <Content Include="Img\home\slider\birds1.png" />
+    <Content Include="Img\home\slider\birds2.png" />
+    <Content Include="Img\home\slider\hill.png" />
+    <Content Include="Img\home\slider\house.png" />
+    <Content Include="Img\home\slider\LogoAll-min.png" />
+    <Content Include="Img\home\slider\sun.png" />
+    <Content Include="Img\home\ticketSys-min.png" />
+    <Content Include="Img\home\tour-bg.png" />
+    <Content Include="Img\home\tour-icon1.png" />
+    <Content Include="Img\home\tour-icon2.png" />
+    <Content Include="Img\home\under.png" />
+    <Content Include="Img\icon-map.png" />
+    <Content Include="Img\logo.png" />
     <Content Include="index.aspx" />
+    <Content Include="Js\audio.min.js" />
+    <Content Include="Js\audiojs.swf" />
+    <Content Include="Js\bootstrap.min.js" />
+    <Content Include="Js\coundown-timer.js" />
+    <Content Include="Js\gmaps.js" />
+    <Content Include="Js\holder.js" />
+    <Content Include="Js\html5shiv.js" />
+    <Content Include="Js\jquery.countTo.js" />
+    <Content Include="Js\jquery.fitvids.js" />
+    <Content Include="Js\jquery.isotope.min.js" />
+    <Content Include="Js\jquery.js" />
+    <Content Include="Js\lightbox.min.js" />
+    <Content Include="Js\main.js" />
+    <Content Include="Js\masonry.min.js" />
+    <Content Include="Js\player-graphics.gif" />
+    <Content Include="Js\respond.min.js" />
+    <Content Include="Js\w.gif" />
+    <Content Include="Js\wow.min.js" />
     <Content Include="Login\login.aspx" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="MasterPages\Principal.Master" />
+    <Content Include="Fonts\fontawesome-webfont.eot" />
+    <Content Include="Fonts\fontawesome-webfont.ttf" />
+    <Content Include="Fonts\fontawesome-webfont.woff" />
+    <Content Include="Fonts\fontawesome-webfont.woff2" />
+    <Content Include="Fonts\FontAwesome.otf" />
+    <Content Include="Fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Fonts\glyphicons-halflings-regular.woff2" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -109,6 +187,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="scripts\ai.0.22.9-build00167.js" />
+    <Content Include="scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -135,6 +215,7 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
