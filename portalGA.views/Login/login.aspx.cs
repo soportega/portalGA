@@ -7,11 +7,16 @@ using System.Web.UI.WebControls;
 
 namespace portalGA.views.Login
 {
-    public partial class login : System.Web.UI.Page
+    public partial class login1 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
+        }
+
+        protected void btnEntrar_Click(object sender, EventArgs e)
+        {
+            txtUser.Text = "Funciona!!!!!";
         }
     }
 }

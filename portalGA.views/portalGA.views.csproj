@@ -165,6 +165,11 @@
     <Content Include="Js\w.gif" />
     <Content Include="Js\wow.min.js" />
     <Content Include="Login\login.aspx" />
+    <Content Include="Login\recursos\animate.min.css" />
+    <Content Include="Login\recursos\bootstrap.min.css" />
+    <Content Include="Login\recursos\custom.min.css" />
+    <Content Include="Login\recursos\font-awesome.min.css" />
+    <Content Include="Login\recursos\nprogress.css" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
