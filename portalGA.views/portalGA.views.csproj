@@ -156,6 +156,7 @@
     <Content Include="Img\home\under.png" />
     <Content Include="Img\icon-map.png" />
     <Content Include="Img\logo.png" />
+    <Content Include="Img\personalTI\Ale-mini-min.png" />
     <Content Include="index.aspx" />
     <Content Include="MasterPages\Admin\recursos\gentelella-master\.gitignore" />
     <Content Include="MasterPages\Admin\recursos\gentelella-master\build\css\custom.css" />
