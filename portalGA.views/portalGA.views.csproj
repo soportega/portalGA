@@ -96,7 +96,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Administrator\administrator.aspx" />
+    <Content Include="Administrator\Agentes\agente.aspx" />
+    <Content Include="Administrator\index.aspx" />
     <Content Include="Css\admin\bootstrap-progressbar-3.3.4.min.css" />
     <Content Include="Css\admin\bootstrap.min.css" />
     <Content Include="Css\admin\custom.min.css" />
@@ -4588,12 +4589,19 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Administrator\administrator.aspx.cs">
-      <DependentUpon>administrator.aspx</DependentUpon>
+    <Compile Include="Administrator\Agentes\agente.aspx.cs">
+      <DependentUpon>agente.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Administrator\administrator.aspx.designer.cs">
-      <DependentUpon>administrator.aspx</DependentUpon>
+    <Compile Include="Administrator\Agentes\agente.aspx.designer.cs">
+      <DependentUpon>agente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
     </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
