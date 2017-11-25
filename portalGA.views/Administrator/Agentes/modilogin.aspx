@@ -1,6 +1,6 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPages/Admin.Master" AutoEventWireup="true" CodeBehind="agente.aspx.cs" Inherits="portalGA.views.Administrator.Agentes.agente" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPages/Admin.Master" AutoEventWireup="true" CodeBehind="modilogin.aspx.cs" Inherits="portalGA.views.Administrator.Agentes.modilogin" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <!-- bootstrap-wysiwyg -->
+      <!-- bootstrap-wysiwyg -->
     <link href="../../MasterPages/Admin/recursos/gentelella-master/vendors/google-code-prettify/bin/prettify.min.css" rel="stylesheet"/>
     <!-- Select2 -->
     <link href="../../MasterPages/Admin/recursos/gentelella-master/vendors/select2/dist/css/select2.min.css" rel="stylesheet"/>
@@ -10,19 +10,20 @@
     <link href="../../MasterPages/Admin/recursos/gentelella-master/vendors/starrr/dist/starrr.css" rel="stylesheet"/>
 
 </asp:Content>
-<asp:Content ID="Content5" ContentPlaceHolderID="ContentPlaceHolderDashboard" runat="server">
+
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolderDashboard" runat="server">
     <li><a href="../index.aspx"><i class="fa fa-home"></i> Dashboard <span class="fa<%-- fa-chevron-down--%>"></span></a>
 </asp:Content>
-<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder3" runat="server">
+<asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolder3" runat="server">
     <img src="../../Img/personalTI/Ale-mini-min.png" alt="">Alejandro Chacón
 </asp:Content>
-<asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolder4" runat="server">
-   <img src="../../Img/personalTI/Ale-mini-min.png" alt="..." class="img-circle profile_img">
+<asp:Content ID="Content5" ContentPlaceHolderID="ContentPlaceHolder4" runat="server">
+    <img src="../../Img/personalTI/Ale-mini-min.png" alt="..." class="img-circle profile_img">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <!-- page content -->
-          <div class="" style="height:800px;">
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <%--contenido--%>
+    <div class="" style="height:800px;">
             <div class="page-title">
               <div class="title_left">
                 <h3>Panel de Agentes</h3>
@@ -34,22 +35,7 @@
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>Datos del agente <small>complete los datos requeridos</small></h2>
-                   <!-- <ul class="nav navbar-right panel_toolbox">
-                      <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                      </li>
-                      <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                        <ul class="dropdown-menu" role="menu">
-                          <li><a href="#">Settings 1</a>
-                          </li>
-                          <li><a href="#">Settings 2</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li><a class="close-link"><i class="fa fa-close"></i></a>
-                      </li>
-                    </ul> -->
+                    <h2>Datos de Login <small>complete los datos requeridos</small></h2>
                     <div class="clearfix"></div>
                   </div>
                   <div class="x_content">
@@ -57,58 +43,6 @@
                     <!--Form-->
                      <div class="form-horizontal form-label-left input_mask">
                       <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
-                        <input type="text" class="form-control has-feedback-left" id="inputSuccess2" placeholder="Nombre">
-                       <span class="fa fa-user form-control-feedback left" aria-hidden="true"></span>
-                      </div>
-                         <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
-                        <input type="text" class="form-control" id="inputSuccess3" placeholder="Apellidos">
-                        <span class="fa fa-user form-control-feedback right" aria-hidden="true"></span>
-                      </div>
-                         <div class="col-md-2 col-sm-2 col-xs-12 form-group has-feedback">
-                        <input type="text" class="form-control has-feedback-left" id="inputSuccess5" placeholder="Extención">
-                        <span class="fa fa-phone form-control-feedback left" aria-hidden="true"></span>
-                      </div>
-                         <div class="col-md-8 col-sm-8 col-xs-12 form-group has-feedback">
-                        <input type="text" class="form-control has-feedback-left" id="inputSuccess4" placeholder="Email">
-                        <span class="fa fa-envelope form-control-feedback left" aria-hidden="true"></span>
-                      </div>
-                         <div class="col-md-2 col-sm-2 col-xs-12 form-group has-feedback">
-                             <asp:DropDownList ID="DDLTipoUser" runat="server" class="form-control"></asp:DropDownList>   
-                        <span class="fa fa fa-tag form-control-feedback left" aria-hidden="true"></span>
-                      </div>
-                         
-                         <div class="col-md-4 col-sm-4 col-xs-12 form-group has-feedback">
-                             <asp:DropDownList ID="DDLDepartamento" runat="server" class="form-control"></asp:DropDownList>   
-                        <span class="fa fa-building form-control-feedback left" aria-hidden="true"></span>
-                      </div>
-                         
-                         
-
-                         <div class="col-md-4 col-sm-4 col-xs-12 form-group has-feedback" style="text-align:center;" >
-                             <div class="x_panel"> 
-                            <div class="flex" style="text-align:center;">
-                                  <img src="../../MasterPages/Admin/recursos/gentelella-master/production/images/img.jpg" alt="..." class="img-circle profile_img" style="width:30%; height:30%; text-align:center; margin:auto 0;">
-                            </div>
-                             <br />
-                            <div class="conten" style="text-align:center;">
-                              <ul class="list-inline count2">
-                                <p>Selecciona una foto a cargar las dimensiones son 128px por 128px</p>
-                            </div>
-                             <asp:Button ID="btnCargar" runat="server"  Text=" Subir" class="btn btn-default btn-sm" />
-                          </div>
-                         </div>
-                         <div class="col-md-4 col-sm-4 col-xs-12 form-group has-feedback">
-                             <asp:DropDownList ID="DDLpuesto" runat="server" class="form-control" ></asp:DropDownList>
-                        <span class="fa fa-sitemap form-control-feedback left" aria-hidden="true"></span>
-                      </div>
-                         </div><!-- Fin Form-->
-                      <br />
-                      <div class="x_title col-md-12 col-sm-12 col-xs-12 form-group has-feedback">
-                    <h2>Datos de Login <small>complete los datos requeridos</small></h2>
-                  </div>
-                    <div class="x_content"> 
-                    <div class="form-horizontal form-label-left input_mask">
-                        <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
                             <asp:TextBox ID="TextBox1" runat="server" class="form-control has-feedback-left" placeholder="Usuario"></asp:TextBox>
                        <span class="fa fa-user form-control-feedback left" aria-hidden="true"></span>
                       </div>
@@ -116,8 +50,40 @@
                              <asp:TextBox ID="TextBox2" runat="server" class="form-control has-feedback-left" placeholder="Contraseña"></asp:TextBox>
                         <span class="fa fa-user form-control-feedback right" aria-hidden="true"></span>
                       </div>
+                         </div><!-- Fin Form-->
 
-                    </div></div>
+                          <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>usuarios registrados <small>basic table subtitle</small></h2>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>Nombre</th>
+                          <th>Usuario</th>
+                          <th>Tipo</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+               <% for(int i = 0; i < 6; i++) %>       <% { Response.Write("<tr>" + "<th>" + i.ToString() +"</tr>" +"</th>"); }%>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                  </div>
+                </div>
+              </div>
+
+
                     </div>
 
                     
@@ -125,12 +91,17 @@
                   </div>
                 </div>
               </div>
+        
+   
+
             </div>
         <!-- /page content -->
-
 </asp:Content>
+
+
+
 <asp:Content ID="Content6" ContentPlaceHolderID="Footer" runat="server">
- <!-- bootstrap-wysiwyg -->
+     <!-- bootstrap-wysiwyg -->
     <script src="../../MasterPages/Admin/recursos/gentelella-master/vendors/bootstrap-wysiwyg/js/bootstrap-wysiwyg.min.js"></script>
     <script src="../../MasterPages/Admin/recursos/gentelella-master/vendors/jquery.hotkeys/jquery.hotkeys.js"></script>
     <script src="../../MasterPages/Admin/recursos/gentelella-master/vendors/google-code-prettify/src/prettify.js"></script>
@@ -191,6 +162,4 @@
 
     <!-- Custom Theme Scripts -->
     <script src="../../MasterPages/Admin/recursos/gentelella-master/build/js/custom.min.js"></script>
-
-
 </asp:Content>

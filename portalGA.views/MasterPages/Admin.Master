@@ -73,12 +73,13 @@
                       <li><a href="index.html">Dashboard</a></li>
                       <li><a href="index2.html">Dashboard2</a></li>
                       <li><a href="index3.html">Dashboard3</a></li>
-                    </ul>--%>
-                  </li>
+                    </ul>
+                  </li>--%>
                   <li><a><i class="fa fa-user"></i> Agentes <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                       <li><a href="../Administrator/Agentes/agente.aspx">Crear</a></li>
                       <li><a href="#">Lista</a></li>
+                       <li><a href="../Administrator/Agentes/modilogin.aspx">Login</a></li>
                     </ul>
                   </li>
                   <li><a><i class="fa fa-phone"></i> Extenciones <span class="fa fa-chevron-down"></span></a>
@@ -338,6 +339,8 @@
 
     <!-- Custom Theme Scripts -->
     <script src="../MasterPages/Admin/recursos/gentelella-master/build/js/custom.min.js"></script>
+    <asp:ContentPlaceHolder ID="Footer" runat="server">
 
+    </asp:ContentPlaceHolder>
 </body>
 </html>

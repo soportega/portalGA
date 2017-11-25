@@ -100,6 +100,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Administrator\Agentes\agente.aspx" />
+    <Content Include="Administrator\Agentes\modilogin.aspx" />
     <Content Include="Administrator\index.aspx" />
     <Content Include="Css\admin\bootstrap-progressbar-3.3.4.min.css" />
     <Content Include="Css\admin\bootstrap.min.css" />
@@ -4598,6 +4599,13 @@
     </Compile>
     <Compile Include="Administrator\Agentes\agente.aspx.designer.cs">
       <DependentUpon>agente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Agentes\modilogin.aspx.cs">
+      <DependentUpon>modilogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\Agentes\modilogin.aspx.designer.cs">
+      <DependentUpon>modilogin.aspx</DependentUpon>
     </Compile>
     <Compile Include="Administrator\index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>

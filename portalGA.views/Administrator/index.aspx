@@ -5,10 +5,10 @@
     <li><a href="index.aspx"><i class="fa fa-home"></i> Dashboard <span class="fa<%-- fa-chevron-down--%>"></span></a>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder3" runat="server">
-    <img src="../Img/personalTI/Ale-mini-min.png" alt="">Alejandro Chacón
+    <img src="../Img/personalTI/Ale-mini-min.png" alt=""/>Alejandro Chacón
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolder4" runat="server">
-   <img src="../../Img/personalTI/Ale-mini-min.png" alt="..." class="img-circle profile_img">
+   <img src="../../Img/personalTI/Ale-mini-min.png" alt="..." class="img-circle profile_img"/>
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">

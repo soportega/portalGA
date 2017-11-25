@@ -240,3 +240,6 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+
+#Archivos a ignorar ya que son la base
+/MasterPages/Admin/recursos/
